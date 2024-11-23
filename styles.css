@@ -20,7 +20,7 @@ main {
 body{
 	margin: -1px;
 }
-header{
+header{	
 	margin: -2px;
 	width: 100%;
 }
@@ -36,7 +36,6 @@ nav {
 a{
 	padding: 10px 15px;
 	color: white;
-	border: 1px solid white;
 	border-radius: 20px;
 	text-decoration: none ;
 }
@@ -47,6 +46,7 @@ p{
 	margin: 0px;
 }
 .navbtn{
+	border: 1px solid white;
 	width: 110px;
 	height: 20px;
 	background: linear-gradient(to bottom, #CC2DEB, #CE85EB );
