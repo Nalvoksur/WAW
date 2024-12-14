@@ -9,34 +9,38 @@
 <body style="background-color: #F0F8FF; font-family: Verdana;">
 <header style="font-family: Verdana;">
 	<nav>
-		<div style="height: 65px; display: inline-flex; width: 100%; text-align: center;">
-			
-			<div class="logo" style= "margin: auto 0 auto auto;" >
+		<logo class="logo">
 			<b>
-			<p  align="center" class="text-logo" style="padding: 2px 0px; "  href="#" style="display:flex; style=margin: 0px;   width: 45px; height: 20px; cursor: pointer;  text-align: center; " onclick ="document.getElementById('main').style.display='block'; document.getElementById('Heroes').style.display='none' ">
-				<span>World</span>
-				<br><span> at</span>
-				<br><span> War</span>
-			</p>
+				<p align="center" class="text-logo" href="#" onclick ="document.getElementById('main-block').style.display='block'; document.getElementById('Heroes').style.display='none'; document.getElementById('main').style.backgroundColor='#F0F8FF'; ">
+				<span> W </span>
+				<span class="logo-span"> a </span>
+				<span class="logo-span"> W </span>
+				</p>
 			</b>
-			</div>
-
-		<div style="width: 70%; display: inline-flex; align-items: center; margin: auto; position: relative; text-align: center;">
-			<a class="navbtn" href="#" style="; margin-left: 10px;" onclick ="document.getElementById('main').style.display='none'; document.getElementById('Heroes').style.display='block' "><b>Персонажи</b></a>
-			<a class="navbtn" href="#" style="; margin-left: 10px;"><b>Миры</b></a>
+		</logo>	
+		<Div style= "display: flex;">
+			<a class="navbtn" href="#" onclick="document.getElementById('main-block').style.display='none'; document.getElementById('Heroes').style.display='block'; document.getElementById('main').style.backgroundColor='black'; document.getElementById('loadbox').style.display='block';"><b>Персонажи</b></a>
+			<a class="navbtn" href="#"><b>Миры</b></a>
 			<span><b>
-			<p style="margin-left: 10px; display: block; color: white; font-size: 24px;" > Война миров на грани</p>
+			<p class="navcaption" > Война миров на грани </p>
 			</b></span>
-			<a class="navbtn" href="#" style=" margin-left: 10px;"><b>Карта мира</b></a>
-			<a class="navbtn" href="#" style=" margin-left: 10px;"><b>Рассы</b></a>
-		</div>
-	</div>
+			<a class="navbtn" href="#"><b>Карта мира</b></a>
+			<a class="navbtn" href="#"><b>Рассы</b></a>
+		</Div>
 	</nav>	
 </header>
-<main>
-<div id="Heroes"></div>
-<div id="main">
-	<div id="Block-1" class="first-block" style="position: relative;">
+<main id="main">
+<div id="Heroes" style="display: none;">
+	<div style="border: 1px solid white;" id="loadbox">
+		<span id="progress" class=" loadbox progress"></span>
+	</div>
+</div>
+<div id="main-block">
+	<div><image src="images/sizes/NewPreviewX4.jpg" style="width: 101%; height: 800px; margin: -10px 0px 0px -10px;"></image></div>
+	<content style="justify-content: center; width: 101%; display: flex; scrollbar-width: 100px;">
+		<div class="scrollbar" id="scrollbar">
+
+			<div id="Block-1" class="first-block" style="position: relative;">
 		<div id="book-cover">
 			<a href="images/covers/WAW-PART1.png" target="_blanck" style="padding: 0px;"><image src = "images/covers/WAW-PART1.png" class = "book-cover" ></image> </a>
 		</div>
@@ -111,8 +115,11 @@
 				<a class="bookbtn">Отзывы</a>
 			</div>
 		</div>
-	</div>
+	</div>	
+		</div>
+	</content>
 </div>
+<script src="scripts/HeroesPage/Loadbox.js"></script>
 </main>
 <footer>
 	
